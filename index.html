@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drag & Drop Website Builder</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Components Panel -->
+    <div id="components-panel">
+        <h3>Components</h3>
+        <div class="builder-component" draggable="true" data-type="header">
+            <i class="fas fa-header"></i> Header
+        </div>
+        <div class="builder-component" draggable="true" data-type="text">
+            <i class="fas fa-paragraph"></i> Text Block
+        </div>
+        <div class="builder-component" draggable="true" data-type="image">
+            <i class="fas fa-image"></i> Image
+        </div>
+        <div class="builder-component" draggable="true" data-type="button">
+            <i class="fas fa-square"></i> Button
+        </div>
+        <div class="builder-component" draggable="true" data-type="section">
+            <i class="fas fa-square-full"></i> Section
+        </div>
+    </div>
+
+    <!-- Canvas Area -->
+    <div id="canvas-area">
+        <h3 class="canvas-default-message">Drag components here to build your website</h3>
+    </div>
+
+    <!-- Properties Panel -->
+    <div id="properties-panel">
+        <h3>Properties</h3>
+        <div id="properties-container">
+            <p class="properties-default-message">Select a component to edit its properties</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
